@@ -1,0 +1,75 @@
+{
+    "url": "localhost/API_PARAM_PATH/13",
+    "response": "{\"numb_letter\":\"\\u0442\\u0440\\u0438\\u043d\\u0430\\u0434\\u0446\\u0430\\u0442\\u044c \"}",
+    "method": "GET"
+}
+{
+    "url": "localhost/API_PARAM_PATH/145",
+    "response": "{\"numb_letter\":\"\\u0441\\u0442\\u043e \\u0441\\u043e\\u0440\\u043e\\u043a \\u043f\\u044f\\u0442\\u044c \"}",
+    "method": "GET"
+}
+{
+    "url": "localhost/API_PARAM_PATH/2547",
+    "response": "{\"numb_letter\":\"\\u0434\\u0432\\u0435 \\u0442\\u044b\\u0441\\u044f\\u0447\\u0438 \\u043f\\u044f\\u0442\\u044c\\u0441\\u043e\\u0442 \\u0441\\u043e\\u0440\\u043e\\u043a \\u0441\\u0435\\u043c\\u044c \"}",
+    "method": "GET"
+}
+{
+    "url": "localhost/API_PARAM_REQUEST/?a=1&b=4&c=-1",
+    "response": "{\"x1\":-4.2360679774998,\"x2\":0.23606797749979}",
+    "method": "GET"
+}
+{
+    "url": "localhost/API_PARAM_REQUEST/?a=1&b=4&c=0",
+    "response": "{\"x1\":-4,\"x2\":0}",
+    "method": "GET"
+}
+{
+    "url": "localhost/API_PARAM_REQUEST/?a=1&b=3&c=5",
+    "response": "{\"x\":\"Does not have roots!\"}",
+    "method": "GET"
+}
+{
+    "url": "localhost/API_PARAM_REQUEST/?date=12.12.2028",
+    "response": "{\"week_day\":\"\\u0412\\u0442\\u043e\\u0440\\u043d\\u0438\\u043a\"}",
+    "method": "GET"
+}
+{
+    "url": "localhost/API_PARAM_REQUEST/?date=06.09.2019",
+    "response": "{\"week_day\":\"\\u041f\\u044f\\u0442\\u043d\\u0438\\u0446\\u0430\"}",
+    "method": "GET"
+}
+{
+    "url": "localhost/API_PARAM_PATH/fibonachchi/13",
+    "response": "{\"fib_result\":233}",
+    "method": "GET"
+}
+{
+    "url": "localhost/API_PARAM_PATH/fibonachchi/13",
+    "response": "{\"fib_result\":233}",
+    "method": "GET"
+}
+{
+    "url": "localhost/API_PARAM_PATH/fibonachchi/37",
+    "response": "{\"fib_result\":24157817}",
+    "method": "GET"
+}
+{
+    "url": "localhost/API_PARAM_PATH/region/72",
+    "response": "{\"region_name\":\"\\u0422\\u044e\\u043c\\u0435\\u043d\\u044c\"}",
+    "method": "GET"
+}
+{
+    "url": "localhost/API_PARAM_PATH/region/66",
+    "response": "{\"region_name\":\"\\u0421\\u0432\\u0435\\u0440\\u0434\\u043b\\u043e\\u0432\\u0441\\u043a\\u0430\\u044f \\u043e\\u0431\\u043b\\u0430\\u0441\\u0442\\u044c\"}",
+    "method": "GET"
+}
+{
+    "url": "localhost/API_PARAM_PATH/region/77",
+    "response": "{\"region_name\":\"\\u0433. \\u041c\\u043e\\u0441\\u043a\\u0432\\u0430\"}",
+    "method": "GET"
+}
+{
+    "url": "localhost/API_PARAM_PATH/region/99",
+    "response": "{\"region_name\":\"REGION NOT FOUND\"}",
+    "method": "GET"
+}
