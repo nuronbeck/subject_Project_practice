@@ -1,0 +1,437 @@
+﻿<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/GetClients</Action>
+  </s:Header>
+  <s:Body>
+    <GetClients xmlns="http://tempuri.org/" />
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <GetClientsResponse xmlns="http://tempuri.org/">
+      <GetClientsResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Client>
+          <a:ClientId>1</a:ClientId>
+          <a:fio_client>Иванов Иван</a:fio_client>
+          <a:phone_client>123456789</a:phone_client>
+        </a:Client>
+        <a:Client>
+          <a:ClientId>2</a:ClientId>
+          <a:fio_client>Борисов Анатолий</a:fio_client>
+          <a:phone_client>987654321</a:phone_client>
+        </a:Client>
+        <a:Client>
+          <a:ClientId>3</a:ClientId>
+          <a:fio_client>Васильев Дмитрий</a:fio_client>
+          <a:phone_client>456123789</a:phone_client>
+        </a:Client>
+        <a:Client>
+          <a:ClientId>12</a:ClientId>
+          <a:fio_client>Исмоилов</a:fio_client>
+          <a:phone_client>89698101474</a:phone_client>
+        </a:Client>
+        <a:Client>
+          <a:ClientId>13</a:ClientId>
+          <a:fio_client>Иванова Алиса</a:fio_client>
+          <a:phone_client>89661234567</a:phone_client>
+        </a:Client>
+      </GetClientsResult>
+    </GetClientsResponse>
+  </s:Body>
+</s:Envelope>
+
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/GetClient</Action>
+  </s:Header>
+  <s:Body>
+    <GetClient xmlns="http://tempuri.org/">
+      <id>1</id>
+    </GetClient>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <GetClientResponse xmlns="http://tempuri.org/">
+      <GetClientResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:ClientId>1</a:ClientId>
+        <a:fio_client>Иванов Иван</a:fio_client>
+        <a:phone_client>123456789</a:phone_client>
+      </GetClientResult>
+    </GetClientResponse>
+  </s:Body>
+</s:Envelope>
+
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/AddClient</Action>
+  </s:Header>
+  <s:Body>
+    <AddClient xmlns="http://tempuri.org/">
+      <client xmlns:d4p1="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <d4p1:ClientId>0</d4p1:ClientId>
+        <d4p1:fio_client>Иванов Иван</d4p1:fio_client>
+        <d4p1:phone_client>45612378</d4p1:phone_client>
+      </client>
+    </AddClient>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <AddClientResponse xmlns="http://tempuri.org/">
+      <AddClientResult>15</AddClientResult>
+    </AddClientResponse>
+  </s:Body>
+</s:Envelope>
+
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/EditClient</Action>
+  </s:Header>
+  <s:Body>
+    <EditClient xmlns="http://tempuri.org/">
+      <client xmlns:d4p1="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <d4p1:ClientId>15</d4p1:ClientId>
+        <d4p1:fio_client>Иванова Алиса</d4p1:fio_client>
+        <d4p1:phone_client>98765432</d4p1:phone_client>
+      </client>
+    </EditClient>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <EditClientResponse xmlns="http://tempuri.org/">
+      <EditClientResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:ClientId>15</a:ClientId>
+        <a:fio_client>Иванова Алиса</a:fio_client>
+        <a:phone_client>98765432</a:phone_client>
+      </EditClientResult>
+    </EditClientResponse>
+  </s:Body>
+</s:Envelope>
+
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/DeleteClient</Action>
+  </s:Header>
+  <s:Body>
+    <DeleteClient xmlns="http://tempuri.org/">
+      <client xmlns:d4p1="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <d4p1:ClientId>15</d4p1:ClientId>
+        <d4p1:fio_client i:nil="true" />
+        <d4p1:phone_client i:nil="true" />
+      </client>
+    </DeleteClient>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <DeleteClientResponse xmlns="http://tempuri.org/">
+      <DeleteClientResult>1</DeleteClientResult>
+    </DeleteClientResponse>
+  </s:Body>
+</s:Envelope>
+
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/GetServices</Action>
+  </s:Header>
+  <s:Body>
+    <GetServices xmlns="http://tempuri.org/" />
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <GetServicesResponse xmlns="http://tempuri.org/">
+      <GetServicesResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Service>
+          <a:ServiceId>1</a:ServiceId>
+          <a:name_service>Стрижка</a:name_service>
+        </a:Service>
+        <a:Service>
+          <a:ServiceId>2</a:ServiceId>
+          <a:name_service>Эпиляция лица</a:name_service>
+        </a:Service>
+        <a:Service>
+          <a:ServiceId>3</a:ServiceId>
+          <a:name_service>Окрашивание волос</a:name_service>
+        </a:Service>
+        <a:Service>
+          <a:ServiceId>4</a:ServiceId>
+          <a:name_service>Стрижка бороды</a:name_service>
+        </a:Service>
+        <a:Service>
+          <a:ServiceId>5</a:ServiceId>
+          <a:name_service>Мытье волос</a:name_service>
+        </a:Service>
+      </GetServicesResult>
+    </GetServicesResponse>
+  </s:Body>
+</s:Envelope>
+
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/GetService</Action>
+  </s:Header>
+  <s:Body>
+    <GetService xmlns="http://tempuri.org/">
+      <id>1</id>
+    </GetService>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <GetServiceResponse xmlns="http://tempuri.org/">
+      <GetServiceResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:ServiceId>1</a:ServiceId>
+        <a:name_service>Стрижка</a:name_service>
+      </GetServiceResult>
+    </GetServiceResponse>
+  </s:Body>
+</s:Envelope>
+
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/AddService</Action>
+  </s:Header>
+  <s:Body>
+    <AddService xmlns="http://tempuri.org/">
+      <service xmlns:d4p1="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <d4p1:ServiceId>0</d4p1:ServiceId>
+        <d4p1:name_service>Эпиляция</d4p1:name_service>
+      </service>
+    </AddService>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <AddServiceResponse xmlns="http://tempuri.org/">
+      <AddServiceResult>7</AddServiceResult>
+    </AddServiceResponse>
+  </s:Body>
+</s:Envelope>
+
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/EditService</Action>
+  </s:Header>
+  <s:Body>
+    <EditService xmlns="http://tempuri.org/">
+      <service xmlns:d4p1="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <d4p1:ServiceId>7</d4p1:ServiceId>
+        <d4p1:name_service>Эпиляция лица</d4p1:name_service>
+      </service>
+    </EditService>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <EditServiceResponse xmlns="http://tempuri.org/">
+      <EditServiceResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:ServiceId>7</a:ServiceId>
+        <a:name_service>Эпиляция лица</a:name_service>
+      </EditServiceResult>
+    </EditServiceResponse>
+  </s:Body>
+</s:Envelope>
+
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/DeleteService</Action>
+  </s:Header>
+  <s:Body>
+    <DeleteService xmlns="http://tempuri.org/">
+      <service xmlns:d4p1="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <d4p1:ServiceId>7</d4p1:ServiceId>
+        <d4p1:name_service i:nil="true" />
+      </service>
+    </DeleteService>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <DeleteServiceResponse xmlns="http://tempuri.org/">
+      <DeleteServiceResult>1</DeleteServiceResult>
+    </DeleteServiceResponse>
+  </s:Body>
+</s:Envelope>
+
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/GetRequests</Action>
+  </s:Header>
+  <s:Body>
+    <GetRequests xmlns="http://tempuri.org/" />
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <GetRequestsResponse xmlns="http://tempuri.org/">
+      <GetRequestsResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Request>
+          <a:ClientId>1</a:ClientId>
+          <a:RequestId>1</a:RequestId>
+        </a:Request>
+      </GetRequestsResult>
+    </GetRequestsResponse>
+  </s:Body>
+</s:Envelope>
+
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/GetRequest</Action>
+  </s:Header>
+  <s:Body>
+    <GetRequest xmlns="http://tempuri.org/">
+      <id>1</id>
+    </GetRequest>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <GetRequestResponse xmlns="http://tempuri.org/">
+      <GetRequestResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:ClientId>1</a:ClientId>
+        <a:RequestId>1</a:RequestId>
+      </GetRequestResult>
+    </GetRequestResponse>
+  </s:Body>
+</s:Envelope>
+
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/AddRequest</Action>
+  </s:Header>
+  <s:Body>
+    <AddRequest xmlns="http://tempuri.org/">
+      <request xmlns:d4p1="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <d4p1:ClientId>1</d4p1:ClientId>
+        <d4p1:RequestId>2</d4p1:RequestId>
+      </request>
+    </AddRequest>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <AddRequestResponse xmlns="http://tempuri.org/">
+      <AddRequestResult>2</AddRequestResult>
+    </AddRequestResponse>
+  </s:Body>
+</s:Envelope>
+
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/EditRequest</Action>
+  </s:Header>
+  <s:Body>
+    <EditRequest xmlns="http://tempuri.org/">
+      <request xmlns:d4p1="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <d4p1:ClientId>2</d4p1:ClientId>
+        <d4p1:RequestId>2</d4p1:RequestId>
+      </request>
+    </EditRequest>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <EditRequestResponse xmlns="http://tempuri.org/">
+      <EditRequestResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:ClientId>2</a:ClientId>
+        <a:RequestId>2</a:RequestId>
+      </EditRequestResult>
+    </EditRequestResponse>
+  </s:Body>
+</s:Envelope>
+
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/DeleteRequest</Action>
+  </s:Header>
+  <s:Body>
+    <DeleteRequest xmlns="http://tempuri.org/">
+      <request xmlns:d4p1="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <d4p1:ClientId>2</d4p1:ClientId>
+        <d4p1:RequestId>2</d4p1:RequestId>
+      </request>
+    </DeleteRequest>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <DeleteRequestResponse xmlns="http://tempuri.org/">
+      <DeleteRequestResult>1</DeleteRequestResult>
+    </DeleteRequestResponse>
+  </s:Body>
+</s:Envelope>
