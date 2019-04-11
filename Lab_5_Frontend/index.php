@@ -34,5 +34,14 @@
 			</div>
 		</a>
 	</div>
+
+	
+	<a href="REST_API_FROM4.php" style="position: absolute; background-color: #dff441; text-decoration: none; padding: 15px; font-size: 3.2vh; border-radius: 5px; color: #000; text-align: center; top: 70%; left: 43vw;">
+			<div class="sub_sub">
+				<i class="fas fa-list"></i>
+				<p>Вызов REST API</p>
+			</div>
+	</a>
+
 </body>
 </html>
