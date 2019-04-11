@@ -1,0 +1,55 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+.wrapper
+{
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 5vh;
+}
+.wrapper table
+{
+	width: 100%;
+	border: 1px solid #000;
+	font-family: Arial;
+}
+.wrapper table tr td:nth-child(1)
+{
+	width: 15%;
+	border-right: 1px solid #000;
+}
+.wrapper table tr td:nth-child(2)
+{
+	width: 50%;
+}
+.wrapper table tr td:nth-child(3)
+{
+	width: 35%;
+	border-left: 1px solid #000;
+}
+.wrapper table tr td
+{
+	text-align: center;
+}
+.wrapper table .tr_head
+{
+	background-color: #03a9f4;
+}
+.wrapper table .tr_head td
+{
+	padding-bottom: 5px;
+	padding-top: 5px;
+	color: #fff;
+}
+.nav_cl
+{
+	background-color: #03a9f4;
+	font-size: 4vh;
+	text-align: center;
+	font-family: Arial;
+	color: #fff;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
