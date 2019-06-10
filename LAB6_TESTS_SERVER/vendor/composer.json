@@ -1,0 +1,5 @@
+{
+    "require": {
+        "slim/php-view": "^2.2"
+    }
+}
